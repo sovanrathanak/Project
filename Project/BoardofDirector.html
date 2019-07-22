@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Board of Director</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.1/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.1/js/mdb.min.js"></script>
+    <style>
+    
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5);
+            /* Black see-through */
+            color: #f1f1f1;
+            width: 100%;
+            transition: .5s ease;
+            opacity: 0;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        form.example input[type=text] {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid grey;
+            float: left;
+            width: 80%;
+            background: #f1f1f1;
+        }
+
+        form.example button {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            background: #2d248a;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+        }
+
+        form.example button:hover {
+            background: #24009c;
+        }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+
+<body>
+      <!-- start silde-->
+      <div class="Hearding" style="background-color:#f9f6f2">     <!--Navbar -->
+        <nav >
+                <img  src="NH Image/home page/xlogo.png.pagespeed.ic.qJwQGn2854.png" 
+                alt="Card image cap" style="widows: 100px; height: 60px; margin-left: 20px;margin-top: 20px">
+              </nav>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="padding: 3px">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100"
+                            src="NH Image/slide show/xMicro-loan-Banner-B.jpg.pagespeed.ic.BNZ2K4cdlN.jpg" alt="1">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="NH Image/slide show/xSME-loan1.jpg.pagespeed.ic.ejjWuM22q2.jpg" alt="2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="NH Image/slide show/xSmall-Loan.jpg.pagespeed.ic.nfp-b6IKDd.jpg"
+                            alt="3">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="NH Image/slide show/xStaff-Loan.jpg.pagespeed.ic.cy00wXAUuC.jpg"
+                            alt="4">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="NH Image/slide show/xSmall-Loan.jpg.pagespeed.ic.nfp-b6IKDd.jpg"
+                            alt="5">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!--end silde-->
+        
+                 <!--Tab bar-->
+            <!-- Classic tabs -->
+            <ul class="nav nav-tabs md-tabs" id="myTabEx" role="tablist"
+            style="background-color:#2d248a; padding: 5px; height: 60px; padding-left: 100px">
+            <li class="nav-item">
+                <a class="nav-link active show" id="home-tab-ex" data-toggle="tab" href="#home-ex" role="tab"
+                    aria-controls="home-ex"  aria-selected="true"
+                    style="color:#f7b71d;font-size: 16px;margin-left: 10px;padding-right: 20px"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false"
+                    style="color:#f7b71d; font-size: 16px;padding-left: 16px;margin-left: 10px"><b>ABOUT US</b></a>
+                <div class="dropdown-menu dropdown-default">
+                    <a class="dropdown-item" href="Profile.html" style="color: #24009c;font-size: 14px">Company's Profile</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Shareholders.html" style="color: #24009c;font-size: 14px">Shareeholders</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="BoardofDirector.html" style="color: #24009c;font-size: 14px">Board of Director</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="ManagementTeam.html" style="color: #24009c;font-size: 14px">Managements</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" style="color: #24009c;font-size: 14px">Organization Chart</a>
+                </div>
+            </li>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false"
+                    style="color:#f7b71d; font-size: 16px;padding-left: 20px;margin-left: 10px"><b>PRODUCT & SERVERS</b></a>
+                <div class="dropdown-menu dropdown-default">
+                    <a class="dropdown-item" href="MicroLoan.html" style="color: #24009c;font-size: 14px">Micro Loan</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="SmallBusinessLoan.html" style="color: #24009c;font-size: 14px">Small Business Loan</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="SmallMediumEnterprise.html" style="color: #24009c;font-size: 14px">Small & Medium Enterprise</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="WashLoan.html" style="color: #24009c;font-size: 14px">Wash Loan</a>
+            </li>
+            </li>
+            </li>
+            <li class="nav-item">
+            <li class="nav-item">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false"
+                    style="color:#f7b71d; font-size: 16px;padding-left: 20px;margin-left: 10px"><b>MEDIA</b></a>
+                <div class="dropdown-menu dropdown-default">
+                    <a class="dropdown-item" href="whatNew.html" style="color: #24009c;font-size: 14px">What's New</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Client testimonial.html" style="color: #24009c;font-size: 14px">Clients Testimonial</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="SocialActivities.html" style="color: #24009c;font-size: 14px">Social Activities</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#" style="color: #24009c;font-size: 14px">Other Social Charities</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="Gallery.html" style="color: #24009c;font-size: 14px">Gallery</a>
+            </li>
+            </li>
+            </li>
+            <li>
+                <div style="margin-left: 260px;">
+                    <form class="example" action="/action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+       <!--End Heading-->
+    <div style="background-color:#f4f6f6;padding:40px">
+        <div class="container" style="width: 70%;text-align: justify;margin-left: 100px;padding: 10px;margin-top: 10px">
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 20px; color: blue"><strong>
+                    Board of Director
+                </strong></h1>
+            <div>
+                <p><img src="NH Image/Board of Director/chareman.jpg" alt="CEO"
+                        style="width:280px;height:280px;margin-right:20px;  float: left; border: 1px solid #ddd;border-radius: 4px;padding: 5px;">
+
+                    <div>
+                        <!-- Title -->
+                        <h4 class="card-title font-weight-bold mb-2"
+                            style="color: blue; font-size: 16px;font-family: 'Times New Roman', Times, serif">
+                            Mr. Kim Youn Soo
+                        </h4>
+                        <!-- Subtitle -->
+                        <p class="card-text" style="color:darkblue; font-size: 12px">
+                                <strong>Chairman</strong></p>
+                    </div>
+                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 14px">
+                            Mr. Kim Youn Soo was appointed as Chairman of the Board of Directors of the Company in August 2018. Currently, he is the General Manager of Global Business Department of NongHyup Bank.
+                            Mr. Kim Youn Soo spent many years with the National Agriculture Cooperative Federation (NACF). His latest position with NACF was the General Manager of the Office of the Board of Directors.
+                            Mr. Kim Youn Soo holds a BA in German Education from Chung Ang University and is bilingual in Japanese and English.
+                    </p>
+                </p>
+            </div>
+        </div>
+        <div class="container" style="width: 70%;text-align: justify;margin-left: 100px;padding: 10px;margin-top: 90px">
+            <div>
+                <p><img src="NH Image/Board of Director/CEO.png"
+                        alt="CEO" style="width:280px;height:280px;margin-right:20px;  float: left; border: 1px solid #ddd;border-radius: 4px;padding: 5px;">
+                    <div>
+                        <!-- Title -->
+                        <h4 class="card-title font-weight-bold mb-2"
+                            style="color: blue; font-size: 16px;font-family: 'Times New Roman', Times, serif">
+                            Mr. Seo Joon Yong
+                        </h4>
+                        <!-- Subtitle -->
+                        <p class="card-text" style="color:darkblue; font-size: 12px"><strong>CEO(Member)</strong></p>
+                    </div>
+                    <p style="font-family: 'Times New Roman', Times, serif; font-size: 14px">
+                        Mr. Seo Joon Yong was appointed as a member of the Board of Directors of the Company in August 2018.
+                         Prior to his appointment, he held various management positions with NongHyup Bank in the Republic of Korea over 14 years. One of his recent positions was Team Leader of Investment Banking Department managing three important investment projects - Gaziantep Health Campus Project in Turkey worth USD40,000,000 in 2016,
+                          LNG Plant Project in Sulawesi, Indonesia, worth USD30,000,000 in 2015, and Steel Mill Construction Project in Brazil worth USD50,000,000 in 2014.
+                          Mr. Seo obtained a BA in English Literature from Chung Ang University in 1987. In addition, he became a Certified Financial Planner in 2004 and a Certified Credit Analyst in 2006 (Korea Banking Institute).
+                           He also attended Accounting and Management Programs of Korea Accounting and Information School in 2008 and Advanced Banking Program of Seoul National University in 2012.
+                    </p>
+                </p>
+            </div>
+        </div>
+        <div class="container" style="width: 70%;text-align: justify;margin-left: 100px;padding: 10px;margin-top: 10px">
+                <div>
+                    <p><img src="NH Image/Board of Director/Song-Kosal.jpg"
+                            alt="CEO" style="width:280px;height:280px;margin-right:20px;  float: left; border: 1px solid #ddd;border-radius: 4px;padding: 5px;">
+                        <div>
+                            <!-- Title -->
+                            <h4 class="card-title font-weight-bold mb-2"
+                                style="color: blue; font-size: 16px;font-family: 'Times New Roman', Times, serif">
+                                Mr. Song Kosal
+                            </h4>
+                            <!-- Subtitle -->
+                            <p class="card-text" style="color:darkblue; font-size: 12px"><strong>Independent Member</strong></p>
+                        </div>
+                        <p style="font-family: 'Times New Roman', Times, serif; font-size: 14px">
+                                Mr. Song Kosal was appointed as an Independent Member of the Board of Directors of the Company in August 2018. 
+                                He has been a Tax Lecturer at CamEd Business School since 2012. He has over 20 year experience in tax and management consulting. 
+                                This includes providing advice to businesses in relation to taxation and investment issues in Cambodia, involving in setting up a strategy for business development, leading teams to conduct tax audit and tax health check for companies, and liaising with government officers. 
+                                Before becoming a member of the Board of Directors of NongHyup Finance Plc, he worked for CamTB Trusted Solutions as Managing Director, Ernst & Young (Cambodia) as Tax Director, Bun & Associates as Tax Deputy Head, KPMG as Tax and Corporate Services Supervisor, and PwC as Senior Tax Consultant. 
+                                Mr. Song Kosal holds a BA in Accounting from the National Institute of Management, Cambodia and a Master of Economics from Nagoya University, Japan. In 2009, he received a Certificate of Doctoral Course Completion from Nagoya University, Japan. He is also bilingual in Japanese and English.
+                        </p>
+                    </p>
+                </div>
+            </div>
+    </div>
+</br>
+</br>
+</br>
+</br>
+<!--the start Footer bar-->
+<div class="Container" style="height: 50px">
+        <div class="row" style="padding: 5px">
+            <div class="text-center pt-3 col-lg-4" style="background-color:#2d248a;padding: 40px">
+                <p style="color: #f7b71d"><b>Heard Office</b></p>
+                <ul class="list-unstyled list-inline font-small" style="background-color:#2d248a; font-size: 12px">
+                    <li class="list-inline-item pr-2 white-text">
+
+                        <p><i class="fas fa-map-marker-alt"></i>
+                            <b> No.C57-61,St.Cheerfulness, Sangkat Tuek</b></p>
+                        <p><b>Thla, Khan Saensokh,Phnom Penh,</b></p>
+                        <p><b>Cambodia.
+                                <i class="fas fa-phone"></i>
+                                Tel:(855) 23 998 226​</b></p>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="text-center pt-3 col-lg-4" style="background-color:#2d248a;padding: 40px">
+                <p style="color: #f7b71d"><b>Complaint/Call Center</b></p>
+                <ul class="list-unstyled list-inline font-small" style="background-color:#2d248a; font-size: 12px">
+                    <li class="list-inline-item pr-2 white-text">
+
+                        <p><i class="fas fa-phone"></i>
+                            <b> Tel: 1800 207 816</b></p>
+                        <p><i class="fab fa-facebook-f pr-1"></i><b>feedback@nhfinance.com.kh </b></p>
+                        <p><b>Business Hour:</br>Monday – Friday 8:00am – 5:00pm</b></p>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="text-center pt-3 col-lg-4" style="background-color:#2d248a;padding: 40px">
+                <p style="color: #f7b71d"><b>Follow us</b></p>
+                <ul class="list-unstyled list-inline font-small" style="font-size: 12px;">
+                    <li class="list-inline-item pr-2 white-text">
+                        <i class="fas fa-clock" style="background-color:#121b74;text-align: center"></i><b>Monday –
+                            Friday 8:00am – 5:00pm</b></li></br>
+                    <li class="list-inline-item pr-2"><a href="#" class="white-text">
+                            <i class="fab fa-youtube-square" style="background-color: red"></i>
+                            <b>Youtube</b></a></li></br>
+                    <li class="list-inline-item pr-2"><a href="#" class="white-text"><i class="fab fa-facebook-f pr-1"
+                                style="background-color:blue">
+                            </i><b>feedback@nhfinance.com.kh</b></a></li></br>
+                    <li class="list-inline-item"><a href="#" class="white-text"><i class="fab fa-twitter pr-1"
+                                style="background-color: chartreuse">
+                            </i><b>NongHyup Finance</b></a></li>
+                </ul>
+            </div>
+            <div class="rounded-bottom text-center pt-3 col-lg-12" style="background-color:#121b74; height: 80px;">
+                <ul class="list-unstyled list-inline font-small">
+                    <li class="list-inline-item pr-2 white-text" style="text-align: center">© 2019 NongHyup Finance. All
+                        Rights Reserved.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <!--the end Footer bar-->
+</body>
+
+</html>
